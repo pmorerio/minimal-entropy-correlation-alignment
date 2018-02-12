@@ -4,17 +4,6 @@ In this work, we face the problem of unsupervised domain adaptation by leveragin
 
 ![geo](./geo.jpeg)
 
-## Code
-Each sub-folder (*...in progress...*) is named after the adaptation problem analyzed and equipped with its own README. The provided code runs with Python 2.7 (should run with Python 3 as well, not tested). For the installation of ``tensorflow-gpu`` please refer to the [website](http://www.tensorflow.org/install/).
-
-The following command should install the main dependencies on most Linux (Ubuntu) machines
-
-``
-sudo apt-get install python-dev python-pip &&
-sudo pip install -r requirements.txt
-``
-
-
 ## Reference
 If you use this code as part of any published research, please acknowledge the following paper:
 
@@ -30,6 +19,16 @@ Pietro Morerio, Jacopo Cavazza and Vittorio Murino
       year={2018},
       url={https://openreview.net/forum?id=rJWechg0Z},
       }
+
+## Code
+Each sub-folder (*...in progress...*) is named after the adaptation problem analyzed and equipped with its own README. The provided code runs with Python 2.7 (should run with Python 3 as well, not tested). For the installation of ``tensorflow-gpu`` please refer to the [website](http://www.tensorflow.org/install/).
+
+The following command should install the main dependencies on most Linux (Ubuntu) machines
+
+``
+sudo apt-get install python-dev python-pip &&
+sudo pip install -r requirements.txt
+``
       
 ### Image samples 
 Left to rigth: SVHN, SYN, NYUD RGB, NYUD DEPTH (HHA), MNIST.
