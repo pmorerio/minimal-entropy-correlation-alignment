@@ -15,9 +15,6 @@ sudo pip install -r requirements.txt
 ``
 
 
-Image samples (left to rigth) SVHN, SYN, NYUD RGB, NYUD DEPTH (HHA), MNIST.
-![images](./samples.png)
-
 ## Reference
 If you use this code as part of any published research, please acknowledge the following paper:
 
@@ -34,5 +31,9 @@ Pietro Morerio, Jacopo Cavazza and Vittorio Murino
       url={https://openreview.net/forum?id=rJWechg0Z},
       }
       
+## Image samples 
+Left to rigth: SVHN, SYN, NYUD RGB, NYUD DEPTH (HHA), MNIST.
+![images](./samples.png)
+
 ## License
 This repository is released under the MIT LICENSE.
