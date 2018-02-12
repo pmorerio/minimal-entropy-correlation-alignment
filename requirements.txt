@@ -1,0 +1,6 @@
+tensorflow-gpu
+seaborn
+scikit-image
+scikit-learn
+matplotlib
+
