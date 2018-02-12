@@ -9,7 +9,8 @@ If you use this code as part of any published research, please acknowledge the f
 
 **"Minimal-Entropy Correlation Alignment for Unsupervised Deep Domain Adaptation"**  
 Pietro Morerio, Jacopo Cavazza and Vittorio Murino  
-*International Conference on Learning Representations (ICLR), 2018*
+*International Conference on Learning Representations (ICLR), 2018*  
+[PDF](https://openreview.net/forum?id=rJWechg0Z)
 
       @article{
       morerio2018minimalentropy,
