@@ -29,4 +29,5 @@ resized MNIST images to 32 × 32 and converted SVHN to grayscale.
     ```
 
 Below are the t-SNE visualization of the feature space learned by geodesic aligment. *Left*: blue and red dots indicate SVHN (source) and MNIST (target) features,respectively. *Right*: different colors indicate the ten different classes
-![tsne](./svhn2mnist/tsne.png)
+
+![tsne](./tsne.png)
