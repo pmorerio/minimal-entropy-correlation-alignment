@@ -1,6 +1,6 @@
 # Minimal-Entropy Correlation Alignment for Unsupervised Deep Domain Adaptation
 
-In this work, we face the problem of unsupervised domain adaptation by leveraging our finding that entropy minimization is induced by the optimal alignment of second order statistics between source and target domains. Aiming at achieving an optimal alignment in practical cases, we adopt a more principled strategy which, differently from current Euclidean approaches, deploys alignment along geodesics. Our pipeline can be implemented by adding to the standard classification loss (on the labeled source domain), a source-to-target regularizer that is weighted in an unsupervised fashion.
+In this work, we face the problem of unsupervised domain adaptation by leveraging our finding that entropy minimization is induced by the optimal alignment of second order statistics between source and target domains. Aiming at achieving an optimal alignment in practical cases, we adopt a more principled strategy which, differently from current Euclidean approaches, deploys correlation alignment along geodesics. Our pipeline can be implemented by adding to the standard classification loss (on the labeled source domain), a source-to-target regularizer that is weighted in an unsupervised fashion.
 
 ![geo](./geo.jpeg)
 
