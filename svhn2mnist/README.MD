@@ -27,7 +27,18 @@ resized MNIST images to 32 × 32 and converted SVHN to grayscale.
     python main.py --mode='test' --method='log-d-coral' --alpha=1. --device='/gpu:0'
     python main.py --mode='tsne' --method='log-d-coral' --alpha=1. --device='/gpu:0'
     ```
+    
+#### Tensorboard logs
+For the training process above, logs are saved in ``./logs/log-d-coral/alpha_1.``. 
 
-Below are the t-SNE visualization of the feature space learned by geodesic aligment. *Left*: blue and red dots indicate SVHN (source) and MNIST (target) features,respectively. *Right*: different colors indicate the ten different classes
+The command
+ ```
+ tensorboard --logdir logs
+ ```
+allows you to visualize all the logs in the ``log`` folder.
+
+#### Visualizations
+
+Below are the t-SNE visualization produced by the command above, showing the feature space learned by geodesic aligment. *Left*: blue and red dots indicate SVHN (source) and MNIST (target) features,respectively. *Right*: different colors indicate the ten different classes
 
 ![tsne](./tsne.png)
