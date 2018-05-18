@@ -23,13 +23,13 @@ resized MNIST images to 32 × 32 and converted SVHN to grayscale.
 
     For example:
     ```
-    python main.py --mode='train' --method='log-d-coral' --alpha=1. --device='/gpu:0'
-    python main.py --mode='test' --method='log-d-coral' --alpha=1. --device='/gpu:0'
-    python main.py --mode='tsne' --method='log-d-coral' --alpha=1. --device='/gpu:0'
+    python main.py --mode='train' --method='log-d-coral' --alpha=7. --device='/gpu:0'
+    python main.py --mode='test' --method='log-d-coral' --alpha=7. --device='/gpu:0'
+    python main.py --mode='tsne' --method='log-d-coral' --alpha=7. --device='/gpu:0'
     ```
     
 #### Tensorboard logs
-For the training process above, logs are saved in ``./logs/log-d-coral/alpha_1.``. 
+For the training process above, logs are saved in ``./logs/log-d-coral/alpha_7.``. 
 
 The command
  ```
