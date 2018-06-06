@@ -27,6 +27,7 @@ resized MNIST images to 32 × 32 and converted SVHN to grayscale.
     python main.py --mode='test' --method='log-d-coral' --alpha=7. --device='/gpu:0'
     python main.py --mode='tsne' --method='log-d-coral' --alpha=7. --device='/gpu:0'
     ```
+NOTE: ``alpha`` replaces the ``lambda`` notation in the paper, in order to avoid confusion with the python ``lambda`` operator.
     
 #### Tensorboard logs
 For the training process above, logs are saved in ``./logs/log-d-coral/alpha_7.``. 
