@@ -141,8 +141,8 @@ class Solver(object):
     
 
 	    trg_acc, trg_entr = sess.run(fetches=[model.trg_accuracy, model.trg_entropy], 
-					    feed_dict={model.trg_images: trg_images[5000:], 
-							model.trg_labels: trg_labels[5000:]})
+					    feed_dict={model.trg_images: trg_images[:], 
+							model.trg_labels: trg_labels[:]})
 					      
 	    print ('test acc [%.3f]' %(trg_acc))
 	    print ('entropy [%.3f]' %(trg_entr))
