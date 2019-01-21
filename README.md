@@ -15,7 +15,7 @@ Pietro Morerio, Jacopo Cavazza and Vittorio Murino
       @article{
       morerio2018minimalentropy,
       title={Minimal-Entropy Correlation Alignment for Unsupervised Deep Domain Adaptation},
-      author={Pietro Morerio, Jacopo Cavazza, Vittorio Murino},
+      author={Morerio, Pietro and Cavazza, Jacopo and Murino, Vittorio},
       journal={International Conference on Learning Representations},
       year={2018},
       url={https://openreview.net/forum?id=rJWechg0Z},
