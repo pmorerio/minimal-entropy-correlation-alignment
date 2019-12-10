@@ -27,8 +27,8 @@ Each sub-folder (*...in progress...*) is named after the adaptation problem anal
 The following command should install the main dependencies on most Linux (Ubuntu) machines
 
 ``
-sudo apt-get install python-dev python-pip &&
-sudo pip install -r requirements.txt
+sudo apt-get install python3-dev python3-pip &&
+sudo pip3 install -r requirements.txt
 ``
       
 ### Image samples 

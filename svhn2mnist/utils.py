@@ -4,7 +4,7 @@ import numpy as np
 
 import tensorflow as tf
 
-import cPickle
+import pickle as cPickle
 
 from sklearn.manifold import TSNE
 
@@ -26,19 +26,19 @@ def computeTSNE(fileName='./for_tsne.pkl'):
 	src_labels = np.argmax(src_labels,1)
 	trg_labels = np.argmax(trg_labels,1)
 
-	print 'Computing T-SNE.'
+	print ('Computing T-SNE.')
 
 	model = TSNE(n_components=2, random_state=0)
 
-	print '0'
+	print ('0')
 	TSNE_hA_0 = model.fit_transform(np.vstack((src_fx,fx)))
 	#~ print '1'
 	#~ TSNE_hA_1 = model.fit_transform(fx)
 	#~ print '2'
 	#~ TSNE_hA_2 = model.fit_transform(src_fx)
-	print '3'
+	print ('3')
 	TSNE_hA_3 = model.fit_transform(np.vstack((src_fx,fx,trg_fx)))
-	print '4'
+	print ('4')
 	TSNE_hA_4 = model.fit_transform(np.vstack((src_fx,fx,adda_trg_fx)))
 	
 	plt.figure(0)
@@ -86,22 +86,10 @@ def knn(X_test, X_ref, Y_ref, K = 5):
 	preds = tf.slice(y, begin=[tf.argmax(count, 0)], size=tf.constant([1], dtype=tf.int64))[0]
 		
 	return preds
-	
-def conv_concat(x,y,mode='train'):
-     	    
-    """Concatenate conditioning vector on feature map axis."""
-    x_shapes = x.get_shape()
-    y_shapes = y.get_shape()
-    if mode == 'eval_dsn':
-	return tf.concat([x, y*tf.ones([10000, x_shapes[1], x_shapes[2], 10])], axis=3)
-    else:
-	return tf.concat([x, y*tf.ones([64, x_shapes[1], x_shapes[2], 10])], axis=3)
-    
+
 def lrelu(input, leak=0.2, scope='lrelu'):
-    
-    return tf.maximum(input, leak*input)
+	return tf.maximum(input, leak*input)
   
 if __name__=='__main__':
-	
 	computeTSNE()
 
