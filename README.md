@@ -22,7 +22,7 @@ Pietro Morerio, Jacopo Cavazza and Vittorio Murino
       }
 
 ## Code
-Each sub-folder (*...in progress...*) is named after the adaptation problem analyzed and equipped with its own README. The provided code runs with Python 2.7 (should run with Python 3 as well, not tested). For the installation of ``tensorflow-gpu`` please refer to the [website](http://www.tensorflow.org/install/).
+Each sub-folder (*...in progress...*) is named after the adaptation problem analyzed and equipped with its own README. The provided code runs with Python 2.7 (for python 3 just checkout the ``python3`` branch). For the installation of ``tensorflow-gpu`` please refer to the [website](http://www.tensorflow.org/install/). The code is tested for ``tensorflow-gpu==1.4.0``.
 
 The following command should install the main dependencies on most Linux (Ubuntu) machines
 
