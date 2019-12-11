@@ -26,10 +26,11 @@ Each sub-folder (*...in progress...*) is named after the adaptation problem anal
 
 The following command should install the main dependencies on most Linux (Ubuntu) machines
 
-``
-sudo apt-get install python3-dev python3-pip &&
+```
+git checkout python3
+sudo apt-get install python3-dev python3-pip
 sudo pip3 install -r requirements.txt
-``
+```
       
 ### Image samples 
 Left to rigth: SVHN, SYN, NYUD RGB, NYUD DEPTH (HHA), MNIST.
